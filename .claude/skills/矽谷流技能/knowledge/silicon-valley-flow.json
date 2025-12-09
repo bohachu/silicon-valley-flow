@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "name": "矽谷流萬用敘事簡報法則",
+    "source": "矽谷流萬用敘事簡報法則 - 博客來電子書",
+    "version": "1.0.0",
+    "description": "將死書本變成能執行的書本，輔導人們用矽谷流原則做簡報"
+  },
+  "core_framework": {
+    "name": "故事四大路標",
+    "description": "任何好故事都有 WHY、WHAT、HOW 的完整結構",
+    "structure": {
+      "WHY": {
+        "label": "為什麼需要改變",
+        "components": [
+          {
+            "name": "背景",
+            "description": "設定場景，報告上次之後完成了哪些事",
+            "slide_type": "context"
+          },
+          {
+            "name": "人物",
+            "description": "介紹關鍵人物或團隊",
+            "slide_type": "characters"
+          },
+          {
+            "name": "衝突",
+            "description": "找出正在影響專案或計畫的挑戰",
+            "slide_type": "conflict"
+          }
+        ]
+      },
+      "WHAT": {
+        "label": "大創意",
+        "description": "核心訊息，推動進展的標題，用金句表達",
+        "slide_type": "big_idea"
+      },
+      "HOW": {
+        "label": "如何解決",
+        "components": [
+          {
+            "name": "處理衝突",
+            "description": "預告解決方案的建議",
+            "slide_type": "solution"
+          },
+          {
+            "name": "結局",
+            "description": "提供建議的細節，行動呼籲",
+            "slide_type": "resolution"
+          }
+        ]
+      }
+    }
+  },
+  "presentation_types": [
+    {
+      "id": "proposal",
+      "name": "提出建議",
+      "chapter": "第10章",
+      "description": "當需要提出解決方案或新計畫時使用",
+      "use_when": [
+        "提出新專案或計畫",
+        "建議新的解決方案",
+        "說服決策者採納建議"
+      ],
+      "slide_sequence": [
+        {
+          "order": 1,
+          "type": "context_and_conflict",
+          "title": "背景與衝突",
+          "prompt_template": "Corporate presentation slide showing: Background context on the left (showing current situation), and conflict/challenge on the right. Use blue and orange accent colors. Professional, clean design with clear visual hierarchy. Topic: {topic}"
+        },
+        {
+          "order": 2,
+          "type": "characters",
+          "title": "人物與利害關係人",
+          "prompt_template": "Corporate presentation slide showcasing key stakeholders and their roles. Use professional headshot style illustrations or icons. Clean layout with names and roles clearly labeled. Topic: {topic}"
+        },
+        {
+          "order": 3,
+          "type": "big_idea",
+          "title": "大創意",
+          "prompt_template": "Impactful corporate presentation slide with ONE bold headline/statement in the center. Minimalist design with dramatic typography. This is the core message. Use contrasting colors for emphasis. Topic: {topic}"
+        },
+        {
+          "order": 4,
+          "type": "solution",
+          "title": "解決方案",
+          "prompt_template": "Corporate presentation slide showing 3 solution pillars or approaches in a row. Each pillar has an icon and brief description. Professional infographic style. Topic: {topic}"
+        },
+        {
+          "order": 5,
+          "type": "resolution",
+          "title": "結局與行動呼籲",
+          "prompt_template": "Corporate presentation slide with call to action. Show expected results with data visualization (charts/graphs) and next steps. Professional, inspiring design. Topic: {topic}"
+        }
+      ]
+    },
+    {
+      "id": "status_update",
+      "name": "近況更新",
+      "chapter": "第11章",
+      "description": "當需要報告專案進度或近況時使用",
+      "use_when": [
+        "定期進度報告",
+        "專案狀態更新",
+        "里程碑回顧"
+      ],
+      "slide_sequence": [
+        {
+          "order": 1,
+          "type": "progress_overview",
+          "title": "進度總覽",
+          "prompt_template": "Corporate status update slide showing progress dashboard. Include timeline or Gantt-style progress bar, key milestones achieved. Professional data visualization. Topic: {topic}"
+        },
+        {
+          "order": 2,
+          "type": "achievements",
+          "title": "已完成項目",
+          "prompt_template": "Corporate presentation slide listing completed achievements with checkmark icons. Clean, organized layout. Show what was accomplished since last update. Topic: {topic}"
+        },
+        {
+          "order": 3,
+          "type": "challenges",
+          "title": "挑戰與風險",
+          "prompt_template": "Corporate presentation slide showing current challenges or risks. Use warning indicators and risk matrix style. Professional risk assessment visual. Topic: {topic}"
+        },
+        {
+          "order": 4,
+          "type": "next_steps",
+          "title": "下一步計畫",
+          "prompt_template": "Corporate presentation slide with upcoming milestones and action items. Timeline or roadmap style with clear deadlines. Professional project planning visual. Topic: {topic}"
+        }
+      ]
+    },
+    {
+      "id": "pitch",
+      "name": "創業簡報",
+      "chapter": "第15章",
+      "description": "向投資人或利害關係人做簡報時使用",
+      "use_when": [
+        "向投資人簡報",
+        "尋求資金或資源",
+        "介紹新創公司或產品"
+      ],
+      "slide_sequence": [
+        {
+          "order": 1,
+          "type": "problem",
+          "title": "問題陳述",
+          "prompt_template": "Pitch deck slide dramatically illustrating the problem being solved. Show pain points visually. Dark/moody colors with accent color for emphasis. Startup presentation style. Topic: {topic}"
+        },
+        {
+          "order": 2,
+          "type": "solution",
+          "title": "解決方案",
+          "prompt_template": "Pitch deck slide showcasing the product/solution as the hero. Clean product visualization or app mockup. Bright, optimistic design. Startup presentation style. Topic: {topic}"
+        },
+        {
+          "order": 3,
+          "type": "market",
+          "title": "市場機會",
+          "prompt_template": "Pitch deck slide showing market size and opportunity. TAM/SAM/SOM visualization or market growth charts. Data-driven startup presentation style. Topic: {topic}"
+        },
+        {
+          "order": 4,
+          "type": "traction",
+          "title": "成績與實績",
+          "prompt_template": "Pitch deck slide displaying key metrics, user growth, or achievements. Hockey stick growth chart, key numbers highlighted. Startup metrics dashboard style. Topic: {topic}"
+        },
+        {
+          "order": 5,
+          "type": "ask",
+          "title": "募資需求",
+          "prompt_template": "Pitch deck slide with clear funding ask and use of funds. Pie chart showing fund allocation, key terms highlighted. Professional investment presentation style. Topic: {topic}"
+        }
+      ]
+    }
+  ],
+  "design_principles": {
+    "story_rules": [
+      {
+        "id": "no_data_dump",
+        "name": "不要傾倒數據",
+        "description": "數據複雜時不能助故事一臂之力，圖表要有故事線"
+      },
+      {
+        "id": "clear_conflict",
+        "name": "衝突要明確",
+        "description": "衝突要晚一點出場，從頭到尾沒明確解釋是外部問題"
+      },
+      {
+        "id": "context_first",
+        "name": "背景先行",
+        "description": "人物與背景不能蓋住，要在開場建立脈絡意義"
+      },
+      {
+        "id": "big_idea_drives",
+        "name": "大創意推動故事",
+        "description": "大創意要能推動故事向前，不能是籠統標題"
+      },
+      {
+        "id": "visual_professional",
+        "name": "視覺專業",
+        "description": "視覺呈現要專業，有策略，能助故事一臂之力"
+      }
+    ],
+    "visual_guidelines": [
+      "使用藍色和橘色作為主要配色",
+      "每張投影片只有一個核心訊息",
+      "數據視覺化要有故事線",
+      "人物照片要專業",
+      "圖表要簡潔明瞭"
+    ]
+  },
+  "prompt_engineering": {
+    "base_style": "Professional corporate presentation slide, clean modern design, 16:9 aspect ratio",
+    "color_palette": "Blue (#0066CC) and orange (#FF6600) accent colors on white background",
+    "typography": "Bold headlines, clear hierarchy, minimal text",
+    "quality_tags": "High quality, professional, business presentation, clean layout, infographic style"
+  }
+}
