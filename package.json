@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@danielxceron/youtube-transcript": "^1.2.3",
+    "@distube/ytdl-core": "^4.16.12"
+  }
+}
